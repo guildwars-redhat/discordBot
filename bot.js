@@ -4638,11 +4638,11 @@ function newServer(svr) {
     defaultConfig(svr);
     adminMsg(false, svr, {username: bot.user.username}, " (me) has been added to " + svr.name + ". You're one of my admins. You can manage me in this server by PMing me `config " + svr.name + "`. Check out http://awesomebot.xyz/ to learn more.");
     bot.sendMessage(svr.defaultChannel, "Hi, I'm " + (svr.detailsOfUser(bot.user).nick || bot.user.username) + "! Use `" + getPrefix(svr) + "help` to learn more or check out http://awesomebot.xyz/");
-    postData();
+    //postData();
 }
 
 function postData() {
-    /*
+
     // Authorize AwesomeBot
     unirest.post("http://awesome.awesomebot.xyz/botauth?token=" + AuthDetails.awesome_token)
     .end(function(response) {
@@ -4659,7 +4659,7 @@ function postData() {
             process.exit();
         }
     });
-    */
+
 }
 
 function postCarbon() {
@@ -4701,7 +4701,7 @@ bot.on("serverDeleted", function(svr) {
         deleteServerData(svr.id);
     });
     logMsg(Date.now(), "INFO", "General", null, "Server " + svr.name + " removed, left server");
-    postData();
+    //postData();
 });
 
 // Checks for old servers
