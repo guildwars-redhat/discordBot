@@ -1,32 +1,59 @@
-﻿{
-  "name": "discordBot",
-  "version": "1.0.0",
-  "description": "Discord Bot using discord.js",
-  "main": "bot.js",
-  "dependencies": {
-    "cleverbot-node": "^0.2.1",
-    "discord.js": "^5.3.1",
-    "request": "^2.67.0",
-    "ytdl-core": "^0.7.9",
-	"youtube-node": "^1.3.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+{
+  "name": "AwesomeBot",
+  "version": "0.1.1",
+  "author": "BitQuote",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/guildwars-redhat/discordBot.git"
+    "url": "https://github.com/BitQuote/AwesomeBot.git"
   },
-  "author": "Kerry Liu",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/guildwars-redhat/discordBot/issues"
+  "license": "CCPL",
+  "dependencies": {
+    "discord.js": ">=8.0.0",
+    "request": ">=2.58.0",
+    "querystring": "*",
+    "underscore": "1.8.x",
+    "winston": "1.0.x",
+    "sinon": "1.14.x",
+    "nock": "1.7.x",
+    "youtube-node": "1.2.x",
+    "google": "1.1.x",
+    "google-images": "0.1.x",
+    "wikijs": "*",
+    "cheerio": "*",
+    "fs": "*",
+    "express": "*",
+    "body-parser": "*",
+    "unirest": "*",
+    "readline": "*",
+    "fast-levenshtein": "*",
+    "convert-units": "*",
+    "exec": "*",
+    "imgur-node-api": "*",
+    "util": "*",
+    "urban": "*",
+    "weather-js": "*",
+    "wolfram-node": "*",
+    "google-search-scraper": "*",
+    "url-info-scraper": "*",
+    "cross-spawn": "*",
+    "write-file-atomic": "*",
+    "money": "*",
+    "searchitunes": "*",
+    "feed-read": "*",
+    "html-to-text": "*",
+    "node-base64-image": "*",
+    "goo.gl": "*",
+    "jokesearch": "*",
+    "bing-translate": "*",
+    "domain": "*",
+    "remove-markdown": "*",
+    "emoji-dictionary": "*",
+    "wiki-infobox-parser": "*",
+    "mathjs": "*",
+    "xml-parser": "*"
   },
-  "homepage": "https://github.com/guildwars-redhat/discordBot#readme",
-  "keywords": [
-    "discord",
-    "bot",
-    "berrybot"
-  ]
+  "scripts": {
+    "start": "node --max_old_space_size=450 bot.js --production"
+  },
+  "main": "bot.js"
 }
