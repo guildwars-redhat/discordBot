@@ -1,5 +1,6 @@
 
 try {
+  console.log("Starting...");
     // Get all the basic modules and files setup
     var Discord = require("discord.js");
     var readline = require("readline");
